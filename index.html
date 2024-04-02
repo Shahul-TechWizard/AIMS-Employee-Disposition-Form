@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <div class="container">
+      <form method="post" action="" name="contact-form">
+        <h4>Contact Us</h4>
+        <input type="text" name="your-name" placeholder="Name" />
+        <input type="text" name="your-number" placeholder="Number" />
+        <input type="email" name="your-email" placeholder="Email" />
+        <textarea name="message" rows="7" placeholder="Your Message"></textarea>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
