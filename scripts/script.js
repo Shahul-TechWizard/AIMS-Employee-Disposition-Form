@@ -1,27 +1,5 @@
-const express = require("express");
-const fetch = require("node-fetch");
-const app = express();
-
-app.use(express.json());
-
-app.get("/proxy", async (req, res) => {
-  try {
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbw-ncyxGI02TwbKEV-qi_4Byo9I_GTEuoiV3uhiKzLSlSpPS4mUy2YHELDTUFlBRcoP/exec"
-    );
-    const data = await response.json();
-    res.json(data);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: "Internal Server Error" });
-  }
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbw-ncyxGI02TwbKEV-qi_4Byo9I_GTEuoiV3uhiKzLSlSpPS4mUy2YHELDTUFlBRcoP/exec";
+  "https://script.google.com/macros/s/AKfycbzo_QPt677EZiQpy8xlYJG0xBwmRZiMvHS6euxZtvSBmjgiqdef1J1wh8p-3ALFzRwk/exec";
 
 const form = document.forms["contact-form"];
 
