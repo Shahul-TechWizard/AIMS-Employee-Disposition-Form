@@ -7,7 +7,7 @@ app.use(express.json());
 app.get("/proxy", async (req, res) => {
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbyXuNxMKrg3ynTribAAcjU_nTiKavACpwLcpCCts2oEsBqp58csJPkl0NEkORQEf7HC/exec"
+      "https://script.google.com/macros/s/AKfycbw-ncyxGI02TwbKEV-qi_4Byo9I_GTEuoiV3uhiKzLSlSpPS4mUy2YHELDTUFlBRcoP/exec"
     );
     const data = await response.json();
     res.json(data);
