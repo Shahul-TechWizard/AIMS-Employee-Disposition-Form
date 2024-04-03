@@ -44,8 +44,8 @@ form.addEventListener("submit", (e) => {
   let followUpValue =
     catagoryValue === "General Services" &&
     document.getElementById("Customer-Source").value != "AIMS"
-      ? "No"
-      : "Yes";
+      ? "Yes"
+      : "No";
   document.getElementById("FollowUp").value = followUpValue;
 
   // Set the value of the "Qualifications" field based on the "Catagory" value
