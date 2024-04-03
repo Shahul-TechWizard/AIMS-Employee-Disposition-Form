@@ -51,6 +51,19 @@ form.addEventListener("submit", (e) => {
       : "Not Required";
   document.getElementById("Qualifications").value = qualificationsValue;
 
+  // zone based upon location
+  let locationValue = document.getElementById("Location").value;
+  let zoneValue =
+    locationValue === "Panruti" ||
+    locationValue === "Cuddalore" ||
+    locationValue === "Villupuram" ||
+    locationValue === "Neyveli" ||
+    locationValue === "Nellikuppam" ||
+    locationValue === "Pondicherry"
+      ? "Local"
+      : "Remote";
+  document.getElementById("Zone").value = zoneValue;
+
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       alert("Thank you! your form is submitted successfully.");
