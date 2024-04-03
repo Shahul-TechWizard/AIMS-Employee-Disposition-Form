@@ -1,21 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disposition Form</title>
+
+    <!-- stylesheets -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- form template -->
     <div class="container">
-      <form method="post" action="" name="contact-form">
-        <h4>Contact Us</h4>
-        <input type="text" name="your-name" placeholder="Name" />
-        <input type="text" name="your-number" placeholder="Number" />
-        <input type="email" name="your-email" placeholder="Email" />
-        <textarea name="message" rows="7" placeholder="Your Message"></textarea>
-        <input type="submit" value="Submit" id="submit" />
-      </form>
-    </div>
+      <span class="big-circle"></span>
+      <img
+        src="./images/design.png"
+        alt="circle design"
+        class="circle-design"
+      />
 
-    <script src="./scripts/script.js"></script>
+      <!-- form left side -->
+      <div class="form-details">
+        <div class="contact-info">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+        <h3 class="form-description">
+          AIMS Customer Details <br />
+          Registeration Sheet
+        </h3>
+        <div class="contact-details">
+          <div class="information">
+            <img
+              src="./images/location-icon.png"
+              class="icon"
+              alt="location icon"
+            />
+            <p>
+              Annai Indira Gandhi Rd, Poombukar thuniyagam basement, Panruti,
+              Tamil Nadu 607106
+            </p>
+          </div>
+          <div class="information">
+            <img src="./images/email-icon.png" class="icon" alt="email icon" />
+            <p>enquiry@aimstravels.com</p>
+          </div>
+          <div class="information">
+            <img src="./images/phone-icon.png" class="icon" alt="phone icon" />
+            <p>63800 69599 , 74188 53599</p>
+          </div>
+        </div>
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="form.aimstravels.com">
+              Facebook: aims_travels
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="form.aimstravels.com">
+              Instagram: aims_travels
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- form right side -->
+      <div class="contact-form">
+        <span class="circle-one"></span>
+        <span class="circle-two"></span>
+
+        <form action="./index.html" autocomplete="off" name="contact-form">
+          <h3 class="title">Contact Form</h3>
+          <div class="input-container">
+            <!-- Customer Name -->
+            <input
+              type="text"
+              name="Name"
+              class="input"
+              placeholder="Customer Name"
+            />
+            <label for="">Customer Name</label>
+            <span>Customer Name</span>
+          </div>
+          <!-- Customer Mobile Number -->
+          <div class="input-container">
+            <input
+              type="tel"
+              name="Mobile Number"
+              class="input"
+              placeholder="Mobile Number"
+            />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
