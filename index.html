@@ -4,98 +4,194 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disposition Form</title>
-
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/027568b3d2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <!-- form template -->
     <div class="container">
       <span class="big-circle"></span>
-      <img
-        src="./images/design.png"
-        alt="circle design"
-        class="circle-design"
-      />
+      <img src="./assests/img/circle-design.png" class="square" alt="" />
 
-      <!-- form left side -->
-      <div class="form-details">
+      <div class="form">
         <div class="contact-info">
-          <img src="./images/logo.png" alt="logo" />
-        </div>
-        <h3 class="form-description">
-          AIMS Customer Details <br />
-          Registeration Sheet
-        </h3>
-        <div class="contact-details">
-          <div class="information">
-            <img
-              src="./images/location-icon.png"
-              class="icon"
-              alt="location icon"
-            />
-            <p>
-              Annai Indira Gandhi Rd, Poombukar thuniyagam basement, Panruti,
-              Tamil Nadu 607106
-            </p>
-          </div>
-          <div class="information">
-            <img src="./images/email-icon.png" class="icon" alt="email icon" />
-            <p>enquiry@aimstravels.com</p>
-          </div>
-          <div class="information">
-            <img src="./images/phone-icon.png" class="icon" alt="phone icon" />
-            <p>63800 69599 , 74188 53599</p>
-          </div>
-        </div>
-        <div class="social-media">
-          <p>Connect with us :</p>
-          <div class="social-icons">
-            <a href="form.aimstravels.com">
-              Facebook: aims_travels
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="form.aimstravels.com">
-              Instagram: aims_travels
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+          <img src="./assests/img/logo.png" alt="logo" class="logo" />
 
-      <!-- form right side -->
-      <div class="contact-form">
-        <span class="circle-one"></span>
-        <span class="circle-two"></span>
+          <h3 class="title" id="description">
+            AIMS Customer Details <br />
+            Registeration Sheet
+          </h3>
 
-        <form action="./index.html" autocomplete="off" name="contact-form">
-          <h3 class="title">Contact Form</h3>
-          <div class="input-container">
-            <!-- Customer Name -->
-            <input
-              type="text"
-              name="Name"
-              class="input"
-              placeholder="Customer Name"
-            />
-            <label for="">Customer Name</label>
-            <span>Customer Name</span>
+          <div class="info">
+            <div class="information">
+              <img src="./assests/img/location-icon.png" class="icon" alt="" />
+              <p>
+                Annai Indira Gandhi Rd, Poombukar thuniyagam basement, Panruti,
+                Tamil Nadu 607106
+              </p>
+            </div>
+            <div class="information">
+              <img src="./assests/img/email-icon.png" class="icon" alt="" />
+              <p>enquiry@aimstravels.com</p>
+            </div>
+            <div class="information">
+              <img src="./assests/img/phone-icon.png" class="icon" alt="" />
+              <p>63800 69599 , 74188 53599</p>
+            </div>
           </div>
-          <!-- Customer Mobile Number -->
-          <div class="input-container">
-            <input
-              type="tel"
-              name="Mobile Number"
-              class="input"
-              placeholder="Mobile Number"
-            />
-            <label for="">Phone</label>
-            <span>Phone</span>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Visit AIMS Instagram Page">
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a href="#" aria-label="Visit AIMS Facebook Page">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
-        </form>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off" name="contact-form">
+            <h3 class="title" id="form-title">Contact Form</h3>
+
+            <div class="input-container">
+              <!-- Customer Name -->
+              <input type="text" name="Name" class="input" title="Name" />
+              <label for="">Customer Name</label>
+              <span>Customer Name</span>
+            </div>
+
+            <!-- Customer Mobile Number -->
+            <div class="input-container">
+              <input
+                type="tel"
+                name="Mobile Number"
+                class="input"
+                title="Phone"
+              />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+
+            <!-- Purpose of Visit -->
+            <h3 class="title">Purpose of Visit</h3>
+            <select
+              name="Purpose of Visit"
+              id="Catagory"
+              title="Catagory"
+              class="input"
+            >
+              <option value="General Services">General Services</option>
+              <option value="Job Application Support Services">
+                Job Application Support Services
+              </option>
+              <option value="Travel Services">Travel Services</option>
+              <option value="Tour Services">Tour Services</option>
+            </select>
+
+            <h3 class="title">Location</h3>
+            <select
+              name="Location"
+              id="Location"
+              title="Location"
+              class="input"
+            >
+              <option value="Panruti">Panruti</option>
+              <option value="Cuddalore">Cuddalore</option>
+              <option value="Villupuram">Villupuram</option>
+              <option value="Neyveli">Neyveli</option>
+              <option value="Nellikuppam">Nellikuppam</option>
+              <option value="Pondicherry">Pondicherry</option>
+              <option value="Ariyalur">Ariyalur</option>
+              <option value="Chengalpattu">Chengalpattu</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Coimbatore">Coimbatore</option>
+              <option value="Dharmapuri">Dharmapuri</option>
+              <option value="Dindigul">Dindigul</option>
+              <option value="Erode">Erode</option>
+              <option value="Kallakurichi">Kallakurichi</option>
+              <option value="Kancheepuram">Kancheepuram</option>
+              <option value="Karur">Karur</option>
+              <option value="Krishnagiri">Krishnagiri</option>
+              <option value="Madurai">Madurai</option>
+              <option value="Mayiladuthurai">Mayiladuthurai</option>
+              <option value="Nagapattinam">Nagapattinam</option>
+              <option value="Kanniyakumari">Kanniyakumari</option>
+              <option value="Namakkal">Namakkal</option>
+              <option value="Perambalur">Perambalur</option>
+              <option value="Pudukottai">Pudukottai</option>
+              <option value="Ramanathapuram">Ramanathapuram</option>
+              <option value="Ranipet">Ranipet</option>
+              <option value="Salem">Salem</option>
+              <option value="Sivagangai">Sivagangai</option>
+              <option value="Tenkasi">Tenkasi</option>
+              <option value="Thanjavur">Thanjavur</option>
+              <option value="Theni">Theni</option>
+              <option value="Thiruvallur">Thiruvallur</option>
+              <option value="Thoothukudi">Thoothukudi</option>
+              <option value="Thiruvarur">Thiruvarur</option>
+              <option value="Trichirappalli">Trichirappalli</option>
+              <option value="Thirunelveli">Thirunelveli</option>
+              <option value="Tirupathur">Tirupathur</option>
+              <option value="Tiruppur">Tiruppur</option>
+              <option value="Tiruvannamalai">Tiruvannamalai</option>
+              <option value="The Nilgiris">The Nilgiris</option>
+              <option value="Vellore">Vellore</option>
+              <option value="Virudhunagar">Virudhunagar</option>
+            </select>
+
+            <h3 class="title">Disposed By</h3>
+            <select
+              name="Employee Name"
+              id="Employee-Name"
+              title="Employee-Name"
+              class="input"
+            >
+              <option value="Rajeswari S">Rajeswari S</option>
+              <option value="Susmitha S">Susmitha S</option>
+              <option value="Gayathri S">Gayathri S</option>
+              <option value="Vasuthiyagarajan S">Vasuthiyagarajan S</option>
+              <option value="Kaviya M">Kaviya M</option>
+              <option value="Mathiazhagan">Mathiazhagan</option>
+              <option value="Mohamed Refai">Mohamed Refai</option>
+              <option value="Shaffi Hussain">Shaffi Hussain</option>
+              <option value="Sheerin Banu A">Sheerin Banu A</option>
+            </select>
+
+            <h3 class="title">Refered By</h3>
+            <select
+              name="Customer Source"
+              id="Customer-Source"
+              title="Customer Source"
+              class="input"
+            >
+              <option value="AIMS">AIMS</option>
+              <option value="CR Digital Vibes">CR Digital Vibes</option>
+            </select>
+
+            <input type="hidden" id="CustomerName" name="Customer Name"></input>
+            <input type="hidden" id="DateOfBirth" name="Date of Birth"></input>
+            <input type="hidden" id="FollowUp" name="Follow Up"></input>
+            <input type="hidden" id="Qualifications" name="Qualifications"></input>
+
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
       </div>
     </div>
-    <!-- scripts -->
-    <script src="./scripts/scripts.js"></script>
+
+    <script src="./assests/js/script.js"></script>
   </body>
 </html>
