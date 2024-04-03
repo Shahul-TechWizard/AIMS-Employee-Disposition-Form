@@ -45,11 +45,11 @@ form.addEventListener("submit", (e) => {
   document.getElementById("FollowUp").value = followUpValue;
 
   // Set the value of the "Qualifications" field based on the "Catagory" value
-  let qualificationsValue =
-    catagoryValue === "Job Application Support Services"
-      ? "Bending"
-      : "Not Required";
-  document.getElementById("Qualifications").value = qualificationsValue;
+  // let qualificationsValue =
+  //   catagoryValue === "Job Application Support Services"
+  //     ? "Bending"
+  //     : "Not Required";
+  // document.getElementById("Qualifications").value = qualificationsValue;
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
