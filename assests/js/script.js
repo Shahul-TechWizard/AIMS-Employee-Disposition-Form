@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
   let catagoryValue = document.getElementById("Catagory").value;
   // Set the value of the "DateOfBirth" field based on the "Catagory" value
   let dateOfBirthValue =
-    catagoryValue === "General Services" ? "Not Required" : "Bending";
+    catagoryValue === "General Services" ? "Not Required" : "Pending";
   document.getElementById("DateOfBirth").value = dateOfBirthValue;
 
   // Set the value of the "Follow Up" field based on the "Catagory" value
@@ -51,7 +51,7 @@ form.addEventListener("submit", (e) => {
   // Set the value of the "Qualifications" field based on the "Catagory" value
   let qualificationsValue =
     catagoryValue === "Job Application Support Services"
-      ? "Bending"
+      ? "Pending"
       : "Not Required";
   document.getElementById("Qualification").value = qualificationsValue;
 
