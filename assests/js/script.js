@@ -40,16 +40,16 @@ form.addEventListener("submit", (e) => {
     catagoryValue === "General Services" ? "Not Required" : "Bending";
   document.getElementById("DateOfBirth").value = dateOfBirthValue;
 
-  // Set the value of the "Follow Up" field based on the "Catagory" value
-  let followUpValue = catagoryValue === "General Services" ? "No" : "Yes";
-  document.getElementById("FollowUp").value = followUpValue;
+  // // Set the value of the "Follow Up" field based on the "Catagory" value
+  // let followUpValue = catagoryValue === "General Services" ? "No" : "Yes";
+  // document.getElementById("FollowUp").value = followUpValue;
 
-  // Set the value of the "Qualifications" field based on the "Catagory" value
-  let qualificationsValue =
-    catagoryValue === "Job Application Support Services"
-      ? "Bending"
-      : "Not Required";
-  document.getElementById("Qualifications").value = qualificationsValue;
+  // // Set the value of the "Qualifications" field based on the "Catagory" value
+  // let qualificationsValue =
+  //   catagoryValue === "Job Application Support Services"
+  //     ? "Bending"
+  //     : "Not Required";
+  // document.getElementById("Qualifications").value = qualificationsValue;
 
   // zone based upon location
   let locationValue = document.getElementById("Location").value;
