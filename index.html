@@ -187,17 +187,26 @@
             <input type="hidden" id="CustomerName" name="Customer Name"></input>
             <input type="hidden" id="DateOfBirth" name="Date of Birth"></input>
             <input type="hidden" id="FollowUp" name="Follow up"></input>
-            <input type="hidden" id="Qualification" name="Qualification" value=""></input>
+            <input type="hidden" id="Qualification" name="Qualification"></input>
             <input type="hidden" id="Zone" name="Zone"></input>
-            <input type="hidden" id="Gender" name="Gender" value="Pending"></input>
-
 
             <input type="submit" value="Send" class="btn" />
           </form>
         </div>
       </div>
     </div>
+    <script>
+      // Get the value of the "Catagory" field
+      let catagoryValue = document.getElementById("Catagory").value;
 
+      // Set the value of the "Qualifications" field based on the "Catagory" value
+      let qualificationsValue =
+      catagoryValue === "Job Application Support Services"
+      ? "Pending"
+      : "Not Required";
+      document.getElementById("Qualification").value = qualificationsValue;
+    </script>
     <script src="./assests/js/script.js"></script>
+    
   </body>
 </html>

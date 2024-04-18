@@ -48,12 +48,12 @@ form.addEventListener("submit", (e) => {
       : "No";
   document.getElementById("FollowUp").value = followUpValue;
 
-  // Set the value of the "Qualifications" field based on the "Catagory" value
-  let qualificationsValue =
-    catagoryValue === "Job Application Support Services"
-      ? "Pending"
-      : "Not Required";
-  document.getElementById("Qualification").value = qualificationsValue;
+  // // Set the value of the "Qualifications" field based on the "Catagory" value
+  // let qualificationsValue =
+  //   catagoryValue === "Job Application Support Services"
+  //     ? "Pending"
+  //     : "Not Required";
+  // document.getElementById("Qualification").value = qualificationsValue;
 
   // zone based upon location
   let locationValue = document.getElementById("Location").value;
