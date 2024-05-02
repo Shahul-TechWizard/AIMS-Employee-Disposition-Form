@@ -74,6 +74,8 @@ form.addEventListener("submit", (e) => {
       // Clear the Customer Name and Phone fields
       document.querySelector('input[name="Name"]').value = "";
       document.querySelector('input[name="Mobile Number"]').value = "";
+      document.querySelector('input[name="Service Charge"]').value = "";
+      document.querySelector('input[name="Application Charge"]').value = "";
     })
     // .then(() => {
     //   window.location.reload();
