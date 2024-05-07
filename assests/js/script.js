@@ -23,6 +23,7 @@ const form = document.forms["contact-form"];
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  document.querySelector('input[name="send"]').value = "wait";
 
   // Get the value of the "Name" field
   let nameValue = document.querySelector('input[name="Name"]').value.trim();
@@ -74,8 +75,7 @@ form.addEventListener("submit", (e) => {
       // Clear the Customer Name and Phone fields
       document.querySelector('input[name="Name"]').value = "";
       document.querySelector('input[name="Mobile Number"]').value = "";
-      document.querySelector('input[name="Service Charge"]').value = "";
-      document.querySelector('input[name="Application Charge"]').value = "";
+      document.querySelector('input[name="send"]').value = "send";
     })
     // .then(() => {
     //   window.location.reload();
